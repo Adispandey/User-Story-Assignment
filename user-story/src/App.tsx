@@ -5,16 +5,17 @@ import Dashboard from './pages/Dashboard'
 import Recent from './pages/Recent'
 import Info from './pages/Info'
 import Setting from './pages/Setting'
+import { dashboard, home, info, recent, setting } from './strings/string'
 
 export const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/info" element={<Info />} />
-        <Route path="/recent" element={<Recent />} />
-        <Route path="/setting" element={<Setting />} />
+        <Route path={home} element={<Home />} />
+        <Route path={dashboard} element={<Dashboard />} />
+        <Route path={info} element={<Info />} />
+        <Route path={recent} element={<Recent />} />
+        <Route path={setting} element={<Setting />} />
       </Routes>
     </BrowserRouter>
   )
